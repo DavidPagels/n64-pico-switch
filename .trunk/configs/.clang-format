@@ -1,0 +1,41 @@
+BasedOnStyle: Google
+
+ColumnLimit: 100
+
+UseTab: Never
+IndentWidth: 4
+
+IndentPPDirectives: AfterHash
+PPIndentWidth: 1
+
+AttributeMacros: ['__unused']
+
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: true
+
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: true
+  AfterFunction:   true
+  AfterStruct:     true
+  BeforeElse:      true
+  IndentBraces:    false
+
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+
+SpacesInParens: Custom
+SpacesInParensOptions:
+  InConditionalStatements: true
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  Other: true
+
+SpaceAfterCStyleCast: false

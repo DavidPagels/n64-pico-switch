@@ -1,0 +1,42 @@
+Checks: >-
+  clang-analyzer-*,
+  -clang-analyzer-cplusplus*,
+  -clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,
+  clang-diagnostic-*,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-lambda-function-name,
+  -bugprone-reserved-identifier,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-avoid-goto,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -cppcoreguidelines-avoid-non-const-global-variables,
+  -cppcoreguidelines-init-variables,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-pro-type-vararg,
+  google-*,
+  -google-readability-braces-around-statements,
+  -google-readability-function-size,
+  -google-readability-todo,
+  linuxkernel-*,
+  misc-*,
+  -misc-no-recursion,
+  modernize-*,
+  -modernize-macro-to-enum,
+  -modernize-return-braced-init-list,
+  -modernize-use-nodiscard,
+  -modernize-use-trailing-return-type,
+  performance-*,
+  -performance-unnecessary-value-param,
+  -performance-no-int-to-ptr,
+  readability-*,
+  -readability-identifier-length,
+  -readability-isolate-declaration,
+  -readability-magic-numbers,
+  -readability-braces-around-statements
+
+CheckOptions:
+  - key:            readability-function-cognitive-complexity.Threshold
+    value:          100
+  - key:            readability-function-cognitive-complexity.IgnoreMacros
+    value:          true
