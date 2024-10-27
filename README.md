@@ -8,6 +8,7 @@
 - [Bluetooth](#bluetooth)
 - [Setup](#setup)
 - [3D Printed Enclosure/Plug](#3d-printed-enclosureplug)
+- [Building with Docker](#building-with-docker)
 - [Credits](#credits)
 
 ---
@@ -61,6 +62,19 @@ I've also designed a small enclosure to house the Pico and act as a plug for a s
   <img width="400" src="resources/N64%20Male%20Connector.jpg"/>
   <img width="400" src="resources/Pico%20Enclosure.jpg"/>
 </a>
+
+## Building with Docker
+
+Having docker installed you can build this project yourself by simply running
+the command:
+
+```
+docker build --output=./build .
+```
+
+The docker file in this project will install all necessary dependencies and run
+the commands necessary to build this project. In the end the generated binary is
+exported to the output folder of the command: "./build"
 
 ## Credits
 
